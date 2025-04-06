@@ -9,14 +9,15 @@ import java.util.List;
 
 @Service
 public class StudentService {
-
+    @Autowired
     private StudentRepo repo;
+
 
     public StudentRepo getRepo() {
         return repo;
     }
 
-    @Autowired
+
     public void setRepo(StudentRepo repo) {
         this.repo = repo;
     }
